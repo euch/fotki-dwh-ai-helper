@@ -8,7 +8,7 @@ model = VisionEncoderDecoderModel.from_pretrained("nlpconnect/vit-gpt2-image-cap
 processor = ViTImageProcessor.from_pretrained("nlpconnect/vit-gpt2-image-captioning")
 tokenizer = AutoTokenizer.from_pretrained("nlpconnect/vit-gpt2-image-captioning")
 
-def describe(flo):
+def describe_vit_gpt2(flo):
     bytes_io = BytesIO(flo.read())
 
     image = Image.open(bytes_io)
