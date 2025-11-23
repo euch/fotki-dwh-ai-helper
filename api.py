@@ -1,5 +1,3 @@
-from base64 import b64encode
-
 from flask import Flask, request, jsonify
 
 import ai_descr_vit_gpt2
